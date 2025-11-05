@@ -2,10 +2,6 @@
 
 > A production-ready React + TypeScript component library with 30+ components, design tokens, and theme system.
 
-[![TypeScript](https://img.shields.io/badge/TypeScript-007ACC?style=flat&logo=typescript&logoColor=white)](https://www.typescriptlang.org/)
-[![React](https://img.shields.io/badge/React-20232A?style=flat&logo=react&logoColor=61DAFB)](https://reactjs.org/)
-[![Storybook](https://img.shields.io/badge/Storybook-FF4785?style=flat&logo=storybook&logoColor=white)](https://storybook.js.org/)
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Overview
 
@@ -88,22 +84,3 @@ src/
 ├── hooks/         # Custom hooks
 └── utils/         # Utilities
 ```
-
----
-
-## Browser Support
-
-Chrome, Firefox, Safari, Edge (Latest 2 versions)
-
----
-
-## License
-
-MIT © [Your Name/Organization]
-
----
-
-## Links
-
-- **Live Demo**: [Storybook](https://your-storybook-url.netlify.app)
-- **Repository**: [GitHub](https://github.com/yourusername/react-design-system)
