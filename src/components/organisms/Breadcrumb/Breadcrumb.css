@@ -1,0 +1,56 @@
+.dl-breadcrumb {
+  display: block;
+}
+
+.dl-breadcrumb__list {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.dl-breadcrumb__item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.dl-breadcrumb__link,
+.dl-breadcrumb__button,
+.dl-breadcrumb__text {
+  color: #757575;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+}
+
+.dl-breadcrumb__link:hover,
+.dl-breadcrumb__button:hover {
+  color: #2196f3;
+}
+
+.dl-breadcrumb__button {
+  background: none;
+  border: none;
+  padding: 0;
+  font-family: inherit;
+  font-size: inherit;
+  cursor: pointer;
+}
+
+.dl-breadcrumb__link--active,
+.dl-breadcrumb__button--active,
+.dl-breadcrumb__text--active {
+  color: rgba(0, 0, 0, 0.87);
+  font-weight: 500;
+  pointer-events: none;
+}
+
+.dl-breadcrumb__separator {
+  color: #bdbdbd;
+  user-select: none;
+}
+

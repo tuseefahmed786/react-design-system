@@ -1,0 +1,37 @@
+.dl-label {
+  display: inline-block;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.87);
+  margin-bottom: 0.25rem;
+}
+
+.dl-label--xs {
+  font-size: 0.75rem;
+}
+
+.dl-label--sm {
+  font-size: 0.875rem;
+}
+
+.dl-label--md {
+  font-size: 1rem;
+}
+
+.dl-label--lg {
+  font-size: 1.125rem;
+}
+
+.dl-label--xl {
+  font-size: 1.25rem;
+}
+
+.dl-label--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dl-label__required {
+  color: #f44336;
+  margin-left: 0.25rem;
+}
+

@@ -1,0 +1,109 @@
+.dl-input-wrapper {
+  display: inline-flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.dl-input-wrapper--full-width {
+  width: 100%;
+}
+
+.dl-input-container {
+  display: inline-flex;
+  align-items: center;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  background-color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.dl-input-container:focus-within {
+  border-color: #2196f3;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.1);
+}
+
+.dl-input-container--error {
+  border-color: #f44336;
+}
+
+.dl-input-container--error:focus-within {
+  border-color: #f44336;
+  box-shadow: 0 0 0 3px rgba(244, 67, 54, 0.1);
+}
+
+.dl-input-container--disabled {
+  background-color: #f5f5f5;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
+
+.dl-input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  font-family: inherit;
+  color: inherit;
+}
+
+.dl-input:disabled {
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.dl-input-container--xs,
+.dl-input--xs {
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+}
+
+.dl-input-container--sm,
+.dl-input--sm {
+  padding: 0.375rem 0.75rem;
+  font-size: 0.875rem;
+}
+
+.dl-input-container--md,
+.dl-input--md {
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+}
+
+.dl-input-container--lg,
+.dl-input--lg {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.125rem;
+}
+
+.dl-input-container--xl,
+.dl-input--xl {
+  padding: 0.75rem 1.5rem;
+  font-size: 1.25rem;
+}
+
+/* Addons */
+.dl-input__addon-left,
+.dl-input__addon-right {
+  display: inline-flex;
+  align-items: center;
+  color: #757575;
+}
+
+.dl-input-container--with-left-addon .dl-input {
+  padding-left: 0.5rem;
+}
+
+.dl-input-container--with-right-addon .dl-input {
+  padding-right: 0.5rem;
+}
+
+/* Helper text */
+.dl-input__helper-text {
+  font-size: 0.875rem;
+  color: #757575;
+}
+
+.dl-input__helper-text--error {
+  color: #f44336;
+}
+

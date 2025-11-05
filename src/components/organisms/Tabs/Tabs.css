@@ -1,0 +1,93 @@
+.dl-tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.dl-tabs__list {
+  display: flex;
+  border-bottom: 2px solid #e0e0e0;
+  gap: 0.5rem;
+}
+
+.dl-tabs--enclosed .dl-tabs__list {
+  border-bottom: none;
+  gap: 0.25rem;
+}
+
+.dl-tabs__tab {
+  background: none;
+  border: none;
+  padding: 0.75rem 1.25rem;
+  font-family: inherit;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+  color: #757575;
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+.dl-tabs--enclosed .dl-tabs__tab {
+  border: 1px solid transparent;
+  border-bottom: none;
+  border-radius: 0.375rem 0.375rem 0 0;
+  margin-bottom: -1px;
+}
+
+.dl-tabs__tab:hover:not(.dl-tabs__tab--disabled) {
+  color: #2196f3;
+}
+
+.dl-tabs__tab--active {
+  color: #2196f3;
+  border-bottom-color: #2196f3;
+}
+
+.dl-tabs--enclosed .dl-tabs__tab--active {
+  background-color: white;
+  border-color: #e0e0e0;
+  border-bottom-color: white;
+}
+
+.dl-tabs__tab--disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.dl-tabs__tab--xs {
+  padding: 0.5rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.dl-tabs__tab--sm {
+  padding: 0.625rem 1rem;
+  font-size: 0.875rem;
+}
+
+.dl-tabs__tab--md {
+  padding: 0.75rem 1.25rem;
+  font-size: 1rem;
+}
+
+.dl-tabs__tab--lg {
+  padding: 0.875rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.dl-tabs__tab--xl {
+  padding: 1rem 1.75rem;
+  font-size: 1.25rem;
+}
+
+.dl-tabs__panel {
+  padding: 1.5rem 0;
+}
+
+.dl-tabs--enclosed .dl-tabs__panel {
+  border: 1px solid #e0e0e0;
+  border-top: none;
+  padding: 1.5rem;
+  background-color: white;
+}
+

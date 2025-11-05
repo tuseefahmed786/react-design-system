@@ -1,0 +1,159 @@
+.dl-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  font-family: inherit;
+  font-weight: 500;
+  line-height: 1.5;
+  text-align: center;
+  text-decoration: none;
+  white-space: nowrap;
+  vertical-align: middle;
+  cursor: pointer;
+  user-select: none;
+  border: 1px solid transparent;
+  border-radius: 0.375rem;
+  transition: all 0.2s ease-in-out;
+  position: relative;
+}
+
+.dl-button:disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.dl-button--xs {
+  padding: 0.25rem 0.75rem;
+  font-size: 0.75rem;
+}
+
+.dl-button--sm {
+  padding: 0.375rem 1rem;
+  font-size: 0.875rem;
+}
+
+.dl-button--md {
+  padding: 0.5rem 1.25rem;
+  font-size: 1rem;
+}
+
+.dl-button--lg {
+  padding: 0.625rem 1.5rem;
+  font-size: 1.125rem;
+}
+
+.dl-button--xl {
+  padding: 0.75rem 2rem;
+  font-size: 1.25rem;
+}
+
+/* Variants */
+.dl-button--primary {
+  background-color: #2196f3;
+  color: white;
+}
+
+.dl-button--primary:hover:not(:disabled) {
+  background-color: #1976d2;
+}
+
+.dl-button--secondary {
+  background-color: #9c27b0;
+  color: white;
+}
+
+.dl-button--secondary:hover:not(:disabled) {
+  background-color: #7b1fa2;
+}
+
+.dl-button--success {
+  background-color: #4caf50;
+  color: white;
+}
+
+.dl-button--success:hover:not(:disabled) {
+  background-color: #388e3c;
+}
+
+.dl-button--warning {
+  background-color: #ff9800;
+  color: white;
+}
+
+.dl-button--warning:hover:not(:disabled) {
+  background-color: #f57c00;
+}
+
+.dl-button--error {
+  background-color: #f44336;
+  color: white;
+}
+
+.dl-button--error:hover:not(:disabled) {
+  background-color: #d32f2f;
+}
+
+.dl-button--info {
+  background-color: #03a9f4;
+  color: white;
+}
+
+.dl-button--info:hover:not(:disabled) {
+  background-color: #0288d1;
+}
+
+.dl-button--ghost {
+  background-color: transparent;
+  color: #2196f3;
+}
+
+.dl-button--ghost:hover:not(:disabled) {
+  background-color: rgba(33, 150, 243, 0.08);
+}
+
+.dl-button--outline {
+  background-color: transparent;
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+.dl-button--outline:hover:not(:disabled) {
+  background-color: #2196f3;
+  color: white;
+}
+
+/* Full width */
+.dl-button--full-width {
+  width: 100%;
+}
+
+/* Loading state */
+.dl-button--loading .dl-button__content {
+  opacity: 0;
+}
+
+.dl-button__spinner {
+  position: absolute;
+  width: 1em;
+  height: 1em;
+  border: 2px solid currentColor;
+  border-right-color: transparent;
+  border-radius: 50%;
+  animation: dl-spinner-rotate 0.6s linear infinite;
+}
+
+@keyframes dl-spinner-rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.dl-button__icon-left,
+.dl-button__icon-right {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+

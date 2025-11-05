@@ -1,0 +1,51 @@
+.dl-menu {
+  display: flex;
+  background-color: white;
+  border: 1px solid #e0e0e0;
+  border-radius: 0.375rem;
+  overflow: hidden;
+}
+
+.dl-menu--vertical {
+  flex-direction: column;
+}
+
+.dl-menu--horizontal {
+  flex-direction: row;
+}
+
+.dl-menu__item {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.75rem 1rem;
+  background: none;
+  border: none;
+  font-family: inherit;
+  font-size: 0.875rem;
+  text-align: left;
+  cursor: pointer;
+  transition: background-color 0.2s ease-in-out;
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dl-menu__item:hover:not(.dl-menu__item--disabled) {
+  background-color: #f5f5f5;
+}
+
+.dl-menu__item--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dl-menu__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #757575;
+}
+
+.dl-menu__label {
+  flex: 1;
+}
+

@@ -1,0 +1,163 @@
+.dl-switch-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dl-switch-wrapper--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dl-switch {
+  position: relative;
+  display: inline-block;
+}
+
+.dl-switch__input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+  position: absolute;
+}
+
+.dl-switch__slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #bdbdbd;
+  transition: all 0.3s ease-in-out;
+  border-radius: 9999px;
+}
+
+.dl-switch__slider::before {
+  position: absolute;
+  content: '';
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+  border-radius: 50%;
+}
+
+.dl-switch__input:checked + .dl-switch__slider {
+  background-color: #2196f3;
+}
+
+.dl-switch__input:focus + .dl-switch__slider {
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.dl-switch__input:disabled + .dl-switch__slider {
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.dl-switch--xs {
+  width: 1.75rem;
+  height: 1rem;
+}
+
+.dl-switch--xs .dl-switch__slider::before {
+  height: 0.75rem;
+  width: 0.75rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.dl-switch--xs .dl-switch__input:checked + .dl-switch__slider::before {
+  transform: translateX(0.75rem);
+}
+
+.dl-switch--sm {
+  width: 2rem;
+  height: 1.125rem;
+}
+
+.dl-switch--sm .dl-switch__slider::before {
+  height: 0.875rem;
+  width: 0.875rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.dl-switch--sm .dl-switch__input:checked + .dl-switch__slider::before {
+  transform: translateX(0.875rem);
+}
+
+.dl-switch--md {
+  width: 2.5rem;
+  height: 1.375rem;
+}
+
+.dl-switch--md .dl-switch__slider::before {
+  height: 1.125rem;
+  width: 1.125rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.dl-switch--md .dl-switch__input:checked + .dl-switch__slider::before {
+  transform: translateX(1.125rem);
+}
+
+.dl-switch--lg {
+  width: 3rem;
+  height: 1.625rem;
+}
+
+.dl-switch--lg .dl-switch__slider::before {
+  height: 1.375rem;
+  width: 1.375rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.dl-switch--lg .dl-switch__input:checked + .dl-switch__slider::before {
+  transform: translateX(1.375rem);
+}
+
+.dl-switch--xl {
+  width: 3.5rem;
+  height: 1.875rem;
+}
+
+.dl-switch--xl .dl-switch__slider::before {
+  height: 1.625rem;
+  width: 1.625rem;
+  left: 0.125rem;
+  bottom: 0.125rem;
+}
+
+.dl-switch--xl .dl-switch__input:checked + .dl-switch__slider::before {
+  transform: translateX(1.625rem);
+}
+
+/* Label */
+.dl-switch__label {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dl-switch__label--xs {
+  font-size: 0.75rem;
+}
+
+.dl-switch__label--sm {
+  font-size: 0.875rem;
+}
+
+.dl-switch__label--md {
+  font-size: 1rem;
+}
+
+.dl-switch__label--lg {
+  font-size: 1.125rem;
+}
+
+.dl-switch__label--xl {
+  font-size: 1.25rem;
+}
+

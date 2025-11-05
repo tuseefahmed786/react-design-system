@@ -1,0 +1,130 @@
+.dl-radio-wrapper {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  cursor: pointer;
+  user-select: none;
+}
+
+.dl-radio-wrapper--disabled {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.dl-radio {
+  appearance: none;
+  display: inline-block;
+  position: relative;
+  border: 2px solid #bdbdbd;
+  border-radius: 50%;
+  background-color: white;
+  cursor: pointer;
+  transition: all 0.2s ease-in-out;
+}
+
+.dl-radio:checked {
+  border-color: #2196f3;
+}
+
+.dl-radio:checked::after {
+  content: '';
+  position: absolute;
+  border-radius: 50%;
+  background-color: #2196f3;
+}
+
+.dl-radio:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(33, 150, 243, 0.2);
+}
+
+.dl-radio:disabled {
+  cursor: not-allowed;
+}
+
+/* Sizes */
+.dl-radio--xs {
+  width: 0.875rem;
+  height: 0.875rem;
+}
+
+.dl-radio--xs:checked::after {
+  width: 0.375rem;
+  height: 0.375rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+}
+
+.dl-radio--sm {
+  width: 1rem;
+  height: 1rem;
+}
+
+.dl-radio--sm:checked::after {
+  width: 0.5rem;
+  height: 0.5rem;
+  top: 0.1875rem;
+  left: 0.1875rem;
+}
+
+.dl-radio--md {
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+.dl-radio--md:checked::after {
+  width: 0.625rem;
+  height: 0.625rem;
+  top: 0.25rem;
+  left: 0.25rem;
+}
+
+.dl-radio--lg {
+  width: 1.5rem;
+  height: 1.5rem;
+}
+
+.dl-radio--lg:checked::after {
+  width: 0.75rem;
+  height: 0.75rem;
+  top: 0.3125rem;
+  left: 0.3125rem;
+}
+
+.dl-radio--xl {
+  width: 1.75rem;
+  height: 1.75rem;
+}
+
+.dl-radio--xl:checked::after {
+  width: 0.875rem;
+  height: 0.875rem;
+  top: 0.375rem;
+  left: 0.375rem;
+}
+
+/* Label */
+.dl-radio__label {
+  color: rgba(0, 0, 0, 0.87);
+}
+
+.dl-radio__label--xs {
+  font-size: 0.75rem;
+}
+
+.dl-radio__label--sm {
+  font-size: 0.875rem;
+}
+
+.dl-radio__label--md {
+  font-size: 1rem;
+}
+
+.dl-radio__label--lg {
+  font-size: 1.125rem;
+}
+
+.dl-radio__label--xl {
+  font-size: 1.25rem;
+}
+

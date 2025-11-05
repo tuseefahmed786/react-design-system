@@ -1,0 +1,59 @@
+.dl-avatar {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  background-color: #e0e0e0;
+  color: #616161;
+  font-weight: 500;
+  user-select: none;
+}
+
+/* Sizes */
+.dl-avatar--xs {
+  width: 1.5rem;
+  height: 1.5rem;
+  font-size: 0.625rem;
+}
+
+.dl-avatar--sm {
+  width: 2rem;
+  height: 2rem;
+  font-size: 0.75rem;
+}
+
+.dl-avatar--md {
+  width: 2.5rem;
+  height: 2.5rem;
+  font-size: 0.875rem;
+}
+
+.dl-avatar--lg {
+  width: 3rem;
+  height: 3rem;
+  font-size: 1rem;
+}
+
+.dl-avatar--xl {
+  width: 4rem;
+  height: 4rem;
+  font-size: 1.25rem;
+}
+
+.dl-avatar--rounded {
+  border-radius: 9999px;
+}
+
+.dl-avatar__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.dl-avatar__initials,
+.dl-avatar__placeholder {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+

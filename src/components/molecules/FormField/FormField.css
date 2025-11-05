@@ -1,0 +1,21 @@
+.dl-form-field {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  margin-bottom: 1rem;
+}
+
+.dl-form-field__control {
+  display: flex;
+  flex-direction: column;
+}
+
+.dl-form-field__message {
+  font-size: 0.875rem;
+  color: #757575;
+}
+
+.dl-form-field__message--error {
+  color: #f44336;
+}
+

@@ -1,0 +1,87 @@
+.dl-tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.dl-tooltip__content {
+  position: absolute;
+  z-index: 1000;
+  padding: 0.5rem 0.75rem;
+  background-color: rgba(0, 0, 0, 0.9);
+  color: white;
+  font-size: 0.875rem;
+  border-radius: 0.25rem;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.2s ease-in-out;
+}
+
+.dl-tooltip__content--visible {
+  opacity: 1;
+}
+
+.dl-tooltip__arrow {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+/* Placements */
+.dl-tooltip__content--top {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(-0.5rem);
+}
+
+.dl-tooltip__content--top .dl-tooltip__arrow {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0.375rem 0.375rem 0 0.375rem;
+  border-color: rgba(0, 0, 0, 0.9) transparent transparent transparent;
+}
+
+.dl-tooltip__content--bottom {
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%) translateY(0.5rem);
+}
+
+.dl-tooltip__content--bottom .dl-tooltip__arrow {
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 0 0.375rem 0.375rem 0.375rem;
+  border-color: transparent transparent rgba(0, 0, 0, 0.9) transparent;
+}
+
+.dl-tooltip__content--left {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(-0.5rem);
+}
+
+.dl-tooltip__content--left .dl-tooltip__arrow {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 0.375rem 0 0.375rem 0.375rem;
+  border-color: transparent transparent transparent rgba(0, 0, 0, 0.9);
+}
+
+.dl-tooltip__content--right {
+  left: 100%;
+  top: 50%;
+  transform: translateY(-50%) translateX(0.5rem);
+}
+
+.dl-tooltip__content--right .dl-tooltip__arrow {
+  right: 100%;
+  top: 50%;
+  transform: translateY(-50%);
+  border-width: 0.375rem 0.375rem 0.375rem 0;
+  border-color: transparent rgba(0, 0, 0, 0.9) transparent transparent;
+}
+

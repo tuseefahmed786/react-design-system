@@ -1,0 +1,42 @@
+.dl-container {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.dl-container--xs {
+  max-width: 640px;
+}
+
+.dl-container--sm {
+  max-width: 768px;
+}
+
+.dl-container--md {
+  max-width: 1024px;
+}
+
+.dl-container--lg {
+  max-width: 1280px;
+}
+
+.dl-container--xl {
+  max-width: 1536px;
+}
+
+.dl-container--2xl {
+  max-width: 1920px;
+}
+
+.dl-container--full {
+  max-width: 100%;
+}
+
+.dl-container--center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
