@@ -72,15 +72,3 @@ npm run storybook
 
 # Build library
 npm run build
-```
-
-### Project Structure
-
-```
-src/
-├── components/    # React components
-├── tokens/        # Design tokens
-├── theme/         # Theme system
-├── hooks/         # Custom hooks
-└── utils/         # Utilities
-```
