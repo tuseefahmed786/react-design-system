@@ -42,8 +42,23 @@ Container, Flex, Stack, Grid, Spacer
 
 ## Quick Start
 
+### 1. Install the package
+
+```bash
+npm install @tuseefahmed110/react-design-system
+```
+
+### 2. Import CSS (Required)
+
 ```tsx
-import { ThemeProvider, Button, Card } from 'react-design-system';
+// In your main entry file (e.g., index.tsx or App.tsx)
+import '@tuseefahmed110/react-design-system/dist/index.css';
+```
+
+### 3. Use Components
+
+```tsx
+import { ThemeProvider, Button, Card } from '@tuseefahmed110/react-design-system';
 
 function App() {
   return (
