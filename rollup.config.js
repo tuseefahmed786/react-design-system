@@ -3,7 +3,9 @@ import commonjs from '@rollup/plugin-commonjs';
 import typescript from '@rollup/plugin-typescript';
 import peerDepsExternal from 'rollup-plugin-peer-deps-external';
 import postcss from 'rollup-plugin-postcss';
+import { createRequire } from 'module';
 
+const require = createRequire(import.meta.url);
 const packageJson = require('./package.json');
 
 export default {
@@ -32,7 +34,7 @@ export default {
       extensions: ['.css'],
       minimize: true,
       inject: false,
-      extract: false,
+      extract: true,
     }),
   ],
   external: ['react', 'react-dom'],
