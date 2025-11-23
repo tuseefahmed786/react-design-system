@@ -87,6 +87,9 @@ npm run storybook
 
 # Build library
 npm run build
+
+# Run tests
+npm test
 ```
 
 ### Project Structure

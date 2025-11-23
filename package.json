@@ -1,6 +1,6 @@
 {
   "name": "@tuseefahmed110/react-design-system",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "A comprehensive TypeScript + React design library",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
